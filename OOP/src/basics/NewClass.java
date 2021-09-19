@@ -1,6 +1,6 @@
 package basics;
 
-import encapsulation.EncapsulationIntro;
+//import encapsulation.EncapsulationIntro;
 
 public class NewClass {
 
@@ -11,8 +11,8 @@ public class NewClass {
 		PersonS p1 = new PersonS();
 		PersonS p2 = new PersonS();
 		Developer d1 = new Developer("Amin", 29);
-		EncapsulationIntro obj1 = new EncapsulationIntro();
-		obj1.doWork();
+		//EncapsulationIntro obj1 = new EncapsulationIntro();
+		//obj1.doWork();
 		p1.name = "Omi";
 		p2.name = "Toma";
 		p1.age = 29;
