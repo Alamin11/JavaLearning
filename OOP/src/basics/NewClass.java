@@ -1,5 +1,7 @@
 package basics;
 
+import encapsulation.EncapsulationIntro;
+
 public class NewClass {
 
 	public static void main(String[] args) {
@@ -8,7 +10,9 @@ public class NewClass {
 		anyPerson pp = new anyPerson();
 		PersonS p1 = new PersonS();
 		PersonS p2 = new PersonS();
-		
+		Developer d1 = new Developer("Amin", 29);
+		EncapsulationIntro obj1 = new EncapsulationIntro();
+		obj1.doWork();
 		p1.name = "Omi";
 		p2.name = "Toma";
 		p1.age = 29;
@@ -24,6 +28,8 @@ public class NewClass {
 		p1.eat();
 		p2.walk();
 		p2.walk(5);
+		d1.walk(28);
+		
 	}
 
 }
@@ -38,6 +44,14 @@ class PersonS {
 	String name;
 	int age;
 	
+	public PersonS(String name2, int age2) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public PersonS() {
+		// TODO Auto-generated constructor stub
+	}
+
 	void walk() {
 		System.out.println(name + " is walking.");
 	}
@@ -49,5 +63,11 @@ class PersonS {
 		System.out.println(name + " is eating");
 	}
 	
+}
+
+class Developer extends PersonS {
+	public Developer(String name, int age) {
+		super(name, age);
+	}
 }
 
